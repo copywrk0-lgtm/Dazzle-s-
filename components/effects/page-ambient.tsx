@@ -1,0 +1,1 @@
+export function PageAmbient(){return <div aria-hidden className="pointer-events-none fixed inset-0 z-[-1] overflow-hidden"><div className="absolute left-[10%] top-[15%] h-80 w-80 rounded-full bg-champagne/[.025] blur-3xl"/><div className="absolute right-[5%] top-[55%] h-96 w-96 rounded-full bg-white/[.02] blur-3xl"/></div>}

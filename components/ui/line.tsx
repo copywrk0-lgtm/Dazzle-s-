@@ -1,0 +1,1 @@
+export function Line(){return <span className="block h-px flex-1 bg-white/10"/>}

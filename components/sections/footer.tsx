@@ -1,0 +1,2 @@
+import { Container } from "../ui/container";
+export function Footer(){return <footer className="border-t border-white/10 py-10"><Container className="flex flex-col gap-3 text-xs text-white/30 md:flex-row md:items-center md:justify-between"><div className="font-black tracking-[.18em] text-white/70">DAZZLE<span className="text-champagne">.</span></div><div>Rajendra Place, New Delhi · Concept demo</div><div>Replace demo claims/assets with verified client material.</div></Container></footer>}

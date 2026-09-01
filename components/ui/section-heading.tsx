@@ -1,0 +1,2 @@
+import { Eyebrow } from "./eyebrow";
+export function SectionHeading({eyebrow,title,body}:{eyebrow:string;title:string;body:string}){return <div className="mb-12 grid gap-6 md:grid-cols-[1fr_420px] md:items-end"><div><Eyebrow>{eyebrow}</Eyebrow><h2 className="max-w-3xl text-4xl font-semibold leading-[.98] tracking-[-.045em] md:text-6xl">{title}</h2></div><p className="text-sm leading-7 text-white/50">{body}</p></div>}

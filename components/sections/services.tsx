@@ -1,0 +1,8 @@
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+import { Container } from "../ui/container";
+import { SectionHeading } from "../ui/section-heading";
+import { GlowCard } from "../ui/glow-card";
+import { Reveal } from "../ui/reveal";
+import { services } from "@/lib/data";
+export function Services(){return <section id="services" className="py-28 md:py-36"><Container><SectionHeading eyebrow="What we do" title="Protection, without the noise." body="A clearer service architecture makes it easier for a high-intent visitor to understand what to choose, why it matters and what happens next."/><div className="grid gap-4 md:grid-cols-3">{services.map(s=><Reveal key={s.no}><GlowCard className="min-h-[430px] p-0"><div className="relative h-52 overflow-hidden"><Image src={s.image} alt={s.title} fill className="object-cover opacity-75 transition duration-700 group-hover:scale-105"/><div className="absolute inset-0 bg-gradient-to-t from-[#0c0c0c] to-transparent"/></div><div className="p-7"><div className="flex justify-between text-[10px] font-black tracking-[.18em] text-champagne"><span>{s.no}</span><span>{s.kicker}</span></div><h3 className="mt-5 text-2xl font-semibold">{s.title}</h3><p className="mt-3 text-sm leading-6 text-white/45">{s.text}</p><a href="#quote" className="mt-6 inline-flex items-center gap-2 text-xs font-bold text-champagne">Explore service <ArrowUpRight size={14}/></a></div></GlowCard></Reveal>)}</div></Container></section>}

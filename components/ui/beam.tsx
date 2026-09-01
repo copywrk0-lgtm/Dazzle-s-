@@ -1,0 +1,1 @@
+export function Beam({className=""}:{className?:string}){return <span aria-hidden className={"pointer-events-none absolute h-[90vh] w-px bg-gradient-to-b from-transparent via-champagne/40 to-transparent blur-[.5px] "+className}/> }

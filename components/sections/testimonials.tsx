@@ -1,0 +1,4 @@
+import { Star } from "lucide-react";
+import { Container } from "../ui/container";
+import { Reveal } from "../ui/reveal";
+export function Testimonials(){return <section className="py-28 md:py-36"><Container><Reveal><div className="rounded-3xl border border-white/10 bg-[#0c0c0c] p-8 md:p-12"><div className="flex gap-1 text-champagne">{Array.from({length:5}).map((_,i)=><Star key={i} size={14} fill="currentColor"/>)}</div><blockquote className="mt-7 max-w-4xl text-2xl font-medium leading-tight tracking-[-.02em] text-white/90 md:text-4xl">“Client testimonials should live here as proof — but only after we receive and verify Dazzle's actual customer reviews.”</blockquote><div className="mt-8 text-xs uppercase tracking-[.16em] text-white/35">Demo placeholder · replace before launch</div></div></Reveal></Container></section>}

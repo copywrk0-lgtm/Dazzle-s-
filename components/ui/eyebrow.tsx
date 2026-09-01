@@ -1,0 +1,1 @@
+export function Eyebrow({children}:{children:React.ReactNode}){return <div className="mb-3 flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-[.22em] text-champagne"><span className="h-1.5 w-1.5 rounded-full bg-champagne shadow-[0_0_16px_#d7b56d]"/>{children}</div>}

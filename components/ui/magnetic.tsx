@@ -1,0 +1,3 @@
+ "use client";
+import { useRef } from "react";
+export function Magnetic({children}:{children:React.ReactNode}){const r=useRef<HTMLDivElement>(null);return <div ref={r} onMouseMove={e=>{const el=r.current;if(!el)return;const b=el.getBoundingClientRect();el.style.transform=`translate(${(e.clientX-b.left-b.width/2)*.08}px,${(e.clientY-b.top-b.height/2)*.08}px)`}} onMouseLeave={()=>{if(r.current)r.current.style.transform=""}} className="transition-transform duration-200">{children}</div>}

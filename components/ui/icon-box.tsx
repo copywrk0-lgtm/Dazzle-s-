@@ -1,0 +1,1 @@
+export function IconBox({children}:{children:React.ReactNode}){return <div className="grid h-10 w-10 place-items-center rounded-xl border border-white/10 bg-white/[.035] text-champagne">{children}</div>}

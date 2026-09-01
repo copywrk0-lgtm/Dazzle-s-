@@ -1,0 +1,1 @@
+export function Badge({children}:{children:React.ReactNode}){return <span className="inline-flex rounded-full border border-white/10 bg-white/[.035] px-3 py-1.5 text-[10px] font-bold uppercase tracking-[.14em] text-white/55">{children}</span>}

@@ -1,0 +1,1 @@
+export function Textarea(props:React.TextareaHTMLAttributes<HTMLTextAreaElement>){return <textarea {...props} className={"w-full rounded-xl border border-white/10 bg-black px-3 py-3 text-sm text-white outline-none "+(props.className||"")}/> }

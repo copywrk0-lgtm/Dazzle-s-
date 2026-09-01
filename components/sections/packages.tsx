@@ -1,0 +1,7 @@
+import { Check } from "lucide-react";
+import { Container } from "../ui/container";
+import { SectionHeading } from "../ui/section-heading";
+import { GlowCard } from "../ui/glow-card";
+import { Reveal } from "../ui/reveal";
+import { packages } from "@/lib/data";
+export function Packages(){return <section id="packages" className="py-28 md:py-36"><Container><SectionHeading eyebrow="Choose your route" title="Protection that fits the car." body="Demo pricing is intentionally left as a placeholder. Replace with confirmed Dazzle packages before presenting publicly."/><div className="grid gap-4 md:grid-cols-3">{packages.map(p=><Reveal key={p.name}><GlowCard className={p.featured?"border-champagne/40 bg-gradient-to-b from-[#17130c] to-[#0c0c0c]":""}><div className="flex items-center justify-between"><span className="text-xs font-black uppercase tracking-[.16em]">{p.name}</span>{p.featured&&<span className="rounded-full bg-champagne px-2.5 py-1 text-[9px] font-black text-black">POPULAR</span>}</div><div className="mt-8 text-3xl font-semibold">{p.price}</div><p className="mt-2 text-sm leading-6 text-white/45">{p.desc}</p><ul className="mt-7 space-y-3">{p.items.map(x=><li key={x} className="flex gap-2 text-sm text-white/60"><Check size={16} className="text-champagne"/>{x}</li>)}</ul><a href="#quote" className="mt-8 block rounded-full border border-white/10 py-3 text-center text-xs font-bold transition hover:border-champagne/40">Ask about this</a></GlowCard></Reveal>)}</div></Container></section>}

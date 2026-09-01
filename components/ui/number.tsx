@@ -1,0 +1,1 @@
+export function Number({children}:{children:React.ReactNode}){return <span className="font-mono text-[10px] font-bold tracking-[.18em] text-champagne">{children}</span>}

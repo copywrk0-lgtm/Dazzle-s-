@@ -1,0 +1,1 @@
+export function Card({children}:{children:React.ReactNode}){return <div className="rounded-3xl border border-white/10 bg-[#0d0d0d]">{children}</div>}

@@ -1,0 +1,1 @@
+export function MovingBorder({children}:{children:React.ReactNode}){return <div className="group relative overflow-hidden rounded-2xl p-px"><div className="absolute inset-[-100%] animate-[spin_6s_linear_infinite] bg-[conic-gradient(from_90deg,transparent_0_70%,#d7b56d_82%,transparent_92%)]"/><div className="relative rounded-2xl bg-[#0c0c0c]">{children}</div></div>}

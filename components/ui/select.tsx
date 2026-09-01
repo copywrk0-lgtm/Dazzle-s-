@@ -1,0 +1,1 @@
+export function Select(props:React.SelectHTMLAttributes<HTMLSelectElement>){return <select {...props} className={"w-full rounded-xl border border-white/10 bg-black px-3 py-3 text-sm text-white outline-none "+(props.className||"")}/> }

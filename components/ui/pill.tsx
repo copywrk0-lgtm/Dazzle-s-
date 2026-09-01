@@ -1,0 +1,1 @@
+export function Pill({children}:{children:React.ReactNode}){return <span className="rounded-full bg-champagne/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[.15em] text-champagne">{children}</span>}

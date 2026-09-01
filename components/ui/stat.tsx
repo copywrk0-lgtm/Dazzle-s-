@@ -1,0 +1,1 @@
+export function Stat({value,label}:{value:string;label:string}){return <div><div className="text-2xl font-black">{value}</div><div className="mt-1 text-[10px] uppercase tracking-[.15em] text-white/35">{label}</div></div>}

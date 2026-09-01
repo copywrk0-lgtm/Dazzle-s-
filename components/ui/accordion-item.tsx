@@ -1,0 +1,1 @@
+export function AccordionItem({title,children}:{title:string;children:React.ReactNode}){return <details className="border-b border-white/10 py-5"><summary className="cursor-pointer list-none font-semibold">{title}</summary><div className="pt-4 text-sm leading-6 text-white/45">{children}</div></details>}

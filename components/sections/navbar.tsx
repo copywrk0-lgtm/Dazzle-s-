@@ -1,0 +1,6 @@
+ "use client";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { Container } from "../ui/container";
+import { Button } from "../ui/button";
+export function Navbar(){const [open,setOpen]=useState(false);return <header className="fixed inset-x-0 top-0 z-40 border-b border-white/[.06] bg-black/55 backdrop-blur-xl"><Container className="flex h-20 items-center justify-between"><a href="#top" className="text-sm font-black tracking-[.2em]">DAZZLE<span className="text-champagne">.</span></a><nav className="hidden gap-8 text-xs font-semibold text-white/60 md:flex"><a href="#services">Services</a><a href="#work">Work</a><a href="#packages">Packages</a><a href="#faq">FAQ</a></nav><div className="hidden md:block"><Button>Get a quote</Button></div><button className="md:hidden" onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button></Container>{open&&<div className="border-t border-white/10 bg-black/90 px-4 py-5 md:hidden"><div className="mx-auto grid w-[min(1180px,calc(100%-32px))] gap-5 text-sm"><a onClick={()=>setOpen(false)} href="#services">Services</a><a onClick={()=>setOpen(false)} href="#work">Work</a><a onClick={()=>setOpen(false)} href="#packages">Packages</a><a onClick={()=>setOpen(false)} href="#faq">FAQ</a><a onClick={()=>setOpen(false)} href="#quote">Get a quote</a></div></div>}</header>}
